@@ -14,10 +14,10 @@ require (
 	github.com/docker/go-units v0.4.0
 	github.com/ethercflow/hookfs v0.3.0
 	github.com/ghodss/yaml v1.0.0
-	github.com/gin-gonic/gin v1.6.2
+	github.com/gin-gonic/gin v1.7.7
 	github.com/go-logr/logr v0.1.0
 	github.com/go-logr/zapr v0.1.0
-	github.com/go-playground/validator/v10 v10.2.0
+	github.com/go-playground/validator/v10 v10.4.1
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/gogo/googleapis v1.3.2 // indirect
 	github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e // indirect
@@ -58,7 +58,6 @@ require (
 	go.uber.org/fx v1.12.0
 	go.uber.org/multierr v1.5.0 // indirect
 	go.uber.org/zap v1.14.0
-	golang.org/x/crypto v0.0.0-20200302210943-78000ba7a073 // indirect
 	golang.org/x/lint v0.0.0-20200302205851-738671d3881b // indirect
 	golang.org/x/net v0.0.0-20200320220750-118fecf932d8
 	golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e
