@@ -14,15 +14,14 @@ require (
 	github.com/docker/go-units v0.4.0
 	github.com/ethercflow/hookfs v0.3.0
 	github.com/ghodss/yaml v1.0.0
-	github.com/gin-gonic/gin v1.6.2
+	github.com/gin-gonic/gin v1.9.1
 	github.com/go-logr/logr v0.1.0
 	github.com/go-logr/zapr v0.1.0
-	github.com/go-playground/validator/v10 v10.2.0
+	github.com/go-playground/validator/v10 v10.14.0
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/gogo/googleapis v1.3.2 // indirect
 	github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e // indirect
-	github.com/golang/protobuf v1.3.3
-	github.com/google/go-cmp v0.4.0 // indirect
+	github.com/golang/protobuf v1.5.0
 	github.com/gorilla/websocket v1.4.1 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.2.0
 	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0
@@ -53,18 +52,17 @@ require (
 	github.com/swaggo/http-swagger v0.0.0-20200308142732-58ac5e232fba
 	github.com/swaggo/swag v1.6.5
 	github.com/tmc/grpc-websocket-proxy v0.0.0-20200122045848-3419fae592fc // indirect
+	github.com/ugorji/go v1.1.7 // indirect
 	github.com/vishvananda/netlink v1.0.0
 	github.com/vishvananda/netns v0.0.0-20191106174202-0a2b9b5464df
 	go.uber.org/fx v1.12.0
 	go.uber.org/multierr v1.5.0 // indirect
 	go.uber.org/zap v1.14.0
-	golang.org/x/crypto v0.0.0-20200302210943-78000ba7a073 // indirect
 	golang.org/x/lint v0.0.0-20200302205851-738671d3881b // indirect
-	golang.org/x/net v0.0.0-20200320220750-118fecf932d8
-	golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e
-	golang.org/x/sys v0.0.0-20200409092240-59c9f1ba88fa // indirect
+	golang.org/x/net v0.10.0
+	golang.org/x/sync v0.1.0
 	golang.org/x/time v0.0.0-20191024005414-555d28b269f0 // indirect
-	golang.org/x/tools v0.0.0-20200309202150-20ab64c0d93f
+	golang.org/x/tools v0.6.0
 	google.golang.org/grpc v1.24.0
 	honnef.co/go/tools v0.0.1-2020.1.3 // indirect
 	k8s.io/api v0.17.0
