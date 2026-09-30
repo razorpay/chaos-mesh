@@ -32,6 +32,22 @@
     "brace-expansion": "1.1.18",
     "yaml": "1.10.3",
     "http-cache-semantics": "4.1.1",
-    "terser": "4.8.1"
+    "terser": "4.8.1",
+    "js-yaml": "3.15.2",
+    "qs": "6.16.0",
+    "body-parser": "1.20.6",
+    "@babel/helpers": "7.26.10",
+    "@babel/runtime": "7.26.10",
+    "@babel/runtime-corejs3": "7.26.10",
+    "browserslist": "4.28.7",
+    "@babel/core": "7.29.6",
+    "follow-redirects": "1.16.0",
+    "lodash": "4.18.0",
+    "picomatch": "2.3.2",
+    "ajv": "6.14.0",
+    "@babel/traverse": "7.23.2",
+    "on-headers": "1.1.0",
+    "serve-static": "1.16.0",
+    "express": "4.20.0"
   }
 }
