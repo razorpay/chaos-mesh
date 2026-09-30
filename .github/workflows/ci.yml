@@ -19,13 +19,13 @@ jobs:
           - test
     steps:
       - name: Set up Go 1.14
-        uses: actions/setup-go@v1
+        uses: actions/setup-go@0caeaed6fd66a828038c2da3c0f662a42862658f  # v1
         with:
           go-version: 1.14.4
         id: go
 
       - name: Check out code into the Go module directory
-        uses: actions/checkout@v2
+        uses: actions/checkout@0717577d45739eb3c851188b29f50ed6c0b2194e  # v2
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           path: go/src/github.com/${{ github.repository }}
