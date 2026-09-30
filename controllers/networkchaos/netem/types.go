@@ -17,7 +17,6 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"reflect"
 	"strings"
 
 	"github.com/go-logr/logr"
@@ -270,8 +269,17 @@ func (r *Reconciler) applyPod(ctx context.Context, pod *v1.Pod, networkchaos *v1
 		netem, err = mergeNetem(networkchaos.Spec)
 	default:
 		action := strings.Title(string(networkchaos.Spec.Action))
-		spec, ok := reflect.Indirect(reflect.ValueOf(networkchaos.Spec)).FieldByName(action).Interface().(NetemSpec)
-		if !ok {
+		var spec NetemSpec
+		switch networkchaos.Spec.Action {
+		case v1alpha1.DelayAction:
+			spec = networkchaos.Spec.Delay
+		case v1alpha1.LossAction:
+			spec = networkchaos.Spec.Loss
+		case v1alpha1.DuplicateAction:
+			spec = networkchaos.Spec.Duplicate
+		case v1alpha1.CorruptAction:
+			spec = networkchaos.Spec.Corrupt
+		default:
 			return fmt.Errorf("spec %s is not a NetemSpec", action)
 		}
 		netem, err = spec.ToNetem()

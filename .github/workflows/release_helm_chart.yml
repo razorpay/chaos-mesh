@@ -8,9 +8,9 @@ jobs:
   release-chart:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@0717577d45739eb3c851188b29f50ed6c0b2194e  # v2
       - name: Publish Helm chart
-        uses: stefanprodan/helm-gh-pages@master
+        uses: stefanprodan/helm-gh-pages@89c6698c192e70ed0e495bee7d3d1ca5b477fe82  # master
         with:
           token: ${{ secrets.CR_TOKEN }}
           charts_dir: helm
