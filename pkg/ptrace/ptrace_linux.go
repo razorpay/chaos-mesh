@@ -333,7 +333,7 @@ func (p *TracedProgram) ReadSlice(addr uint64, size uint64) (*[]byte, error) {
 	remoteIov.iov_len = C.ulong(size)
 
 	ret, err := C.process_vm_readv(C.int(p.pid),
-		(*C.struct_iovec)(unsafe.Pointer(&localIov)),
+		&localIov,
 		1,
 		remoteIov,
 		1,
@@ -368,7 +368,7 @@ func (p *TracedProgram) WriteSlice(addr uint64, buffer []byte) error {
 	remoteIov.iov_len = C.ulong(size)
 
 	ret, err := C.process_vm_writev(C.int(p.pid),
-		(*C.struct_iovec)(unsafe.Pointer(&localIov)),
+		&localIov,
 		1,
 		remoteIov,
 		1,
